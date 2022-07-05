@@ -1,0 +1,16 @@
+{
+  "name": "hottemelsassy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:hagenek/hottemelsassy.git",
+  "author": "hagenek <georg.ekeberg@cgi.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.18"
+  },
+  "scripts": {
+    "css": "node-sass --include-path scss style.scss css/style.css",
+    "watch": "nodemon -e scss -x 'npm run css'"
+  }
+}
